@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">TrainingDiary</string>
+    <string name="startTrainingButtonText">Начать тренировку</string>
+    <string name="archiveButtonText">Архив</string>
+    <string name="registerButtonText">Зарегистрироваться</string>
+    <string name="authorizeButtonText">Авторизоваться</string>
+    <string name="userNameAuthEditTextHint">Введите имя пользователя</string>
+    <string name="passwordAuthEditTextHint">Введите пароль</string>
+    <string name="userNameRegEditTextHint">Введите имя пользователя</string>
+    <string name="passwordRegEditTextHint">Введите пароль</string>
+    <string name="startExerciseButtonText">Начать упражнение</string>
+    <string name="addSetButtonText">Добавить подход</string>
+    <string name="weightEditTextHint">Введите вес снаряда</string>
+    <string name="repsEditTextHint">Введите количество повторений</string>
+    <string name="commentsEditTextHint">Введите дополнительные комментарии, если нужно</string>
+    <string name="nameEditTextHint">Введите название упражнения</string>
+    <string name="finishExerciseButtonText">Закончить упражнение</string>
+    <string name="finishTrainingButtonText">Закончить тренировку</string>
+    <string name="backToMainButtonText">Вернуться на главную</string>
+    <string name="returnText">Вернуться</string>
+    <string name="cancelTrainingButtonText">Отменить тренировку</string>
+    <string name="cancelExerciseButtonText">Отменить упражнение</string>
+    <string name="cancelSetButtonText">Отменить подход</string>
+    <string name="unregisterButtonText">Выйти</string>
+    <string name="deleteExerciseButtonText">Удалить упражнение</string>
+    <string name="timerEditTextHint">Введите время в формате 00:00</string>
+    <string name="startTimerButtonText">Запустить таймер</string>
+</resources>

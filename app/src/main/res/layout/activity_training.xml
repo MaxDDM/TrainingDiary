@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrainingActivity">
+
+    <Button
+        android:id="@+id/startExerciseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/startExerciseButtonText"
+        app:layout_constraintBottom_toTopOf="@+id/finishTrainingButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/finishTrainingButton"
+        android:layout_width="190dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/finishTrainingButtonText"
+        app:layout_constraintBottom_toTopOf="@+id/cancelTrainingButton"
+        app:layout_constraintEnd_toEndOf="@+id/startExerciseButton"
+        app:layout_constraintStart_toStartOf="@+id/cancelTrainingButton"
+        app:layout_constraintTop_toBottomOf="@+id/startExerciseButton" />
+
+    <Button
+        android:id="@+id/cancelTrainingButton"
+        android:layout_width="177dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/cancelTrainingButtonText"
+        app:layout_constraintBottom_toTopOf="@+id/listOfExercises"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finishTrainingButton" />
+
+    <ListView
+        android:id="@+id/listOfExercises"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cancelTrainingButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

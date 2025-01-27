@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "366585090377",
+    "project_id": "trainingdiary-b09f5",
+    "storage_bucket": "trainingdiary-b09f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:366585090377:android:ee680bc8e3191fef594a98",
+        "android_client_info": {
+          "package_name": "com.example.trainingdiary"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4CET7vWjc3XOYJz4nkKdos0lBmnnxdG4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
