@@ -3,15 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:background="@drawable/element_background"
+    android:layout_width="410dp"
+    android:layout_height="60dp">
 
     <TextView
         android:id="@+id/monthTextView"
-        android:layout_width="0dp"
-        android:layout_height="51dp"
+        android:layout_width="388dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat"
         android:text="@string/app_name"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

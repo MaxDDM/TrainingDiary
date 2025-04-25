@@ -24,25 +24,7 @@
             android:name=".TrainingDisplayActivity"
             android:exported="false" />
         <activity
-            android:name=".TrainingInListActivity"
-            android:exported="false" />
-        <activity
             android:name=".MonthTrainingsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity2"
-            android:exported="false" />
-        <activity
-            android:name=".MonthInListActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ExerciseInListActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ExerciseIInListActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SetInListActivity"
             android:exported="false" />
         <activity
             android:name=".SetActivity"

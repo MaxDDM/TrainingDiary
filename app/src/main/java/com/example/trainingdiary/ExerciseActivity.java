@@ -21,7 +21,7 @@ import java.util.ArrayList;
 public class ExerciseActivity extends AppCompatActivity {
 
     static ArrayList<Set> _sets = new ArrayList<>();
-    static private String name = "";
+    static String name = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,9 +56,9 @@ public class ExerciseActivity extends AppCompatActivity {
                 _sets = e.sets;
                 id = position;
             }
-            SetListAdapter adapter = new SetListAdapter(this, R.layout.activity_set_in_list, _sets);
-            listOfSets.setAdapter(adapter);
         }
+        SetListAdapter adapter = new SetListAdapter(this, R.layout.activity_set_in_list, _sets);
+        listOfSets.setAdapter(adapter);
 
         addSetButton.setOnClickListener(v -> {
             Intent intent = new Intent(this, SetActivity.class);

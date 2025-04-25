@@ -5,26 +5,31 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
     tools:context=".TrainingDisplayActivity">
 
     <Button
         android:id="@+id/backToTrainingListButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="22dp"
+        android:layout_width="175dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/objectsColor"
+        android:fontFamily="@font/montserrat"
         android:text="@string/returnText"
-        app:layout_constraintBottom_toTopOf="@+id/trainingExercisesListView"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/trainingExercisesListView" />
 
     <ListView
         android:id="@+id/trainingExercisesListView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/backToTrainingListButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/backToTrainingListButton" />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

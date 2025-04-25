@@ -79,8 +79,8 @@ public class ArchiveActivity extends AppCompatActivity {
     private MonthsListAdapter getMonthsListAdapter(ArrayList<Training> trainings) {
         ArrayList<String> months = new ArrayList<>();
         for(int i = 0; i < trainings.size(); ++i) {
-            if(!months.contains(trainings.get(i).date)) {
-                months.add(trainings.get(i).date);
+            if(!months.contains(trainings.get(i).date.substring(0, trainings.get(i).date.lastIndexOf(' ')))) {
+                months.add(trainings.get(i).date.substring(0, trainings.get(i).date.lastIndexOf(' ')));
             }
         }
         return new MonthsListAdapter(this, R.layout.activity_month_in_list, months);

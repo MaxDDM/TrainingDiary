@@ -5,15 +5,19 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/registrationButton"
-        android:layout_width="190dp"
-        android:layout_height="0dp"
+        android:layout_width="247dp"
+        android:layout_height="77dp"
         android:layout_marginTop="183dp"
         android:layout_marginBottom="135dp"
+        android:backgroundTint="@color/objectsColor"
+        android:fontFamily="@font/montserrat"
         android:text="@string/registerButtonText"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/authorizationButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,10 +26,13 @@
 
     <Button
         android:id="@+id/authorizationButton"
-        android:layout_width="190dp"
-        android:layout_height="0dp"
+        android:layout_width="247dp"
+        android:layout_height="77dp"
         android:layout_marginBottom="293dp"
+        android:backgroundTint="@color/objectsColor"
+        android:fontFamily="@font/montserrat"
         android:text="@string/authorizeButtonText"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

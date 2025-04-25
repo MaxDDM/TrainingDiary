@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
     tools:context=".TrainingActivity">
 
     <Button
@@ -12,9 +13,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/objectsColor"
+        android:fontFamily="@font/montserrat"
         android:text="@string/startExerciseButtonText"
-        app:layout_constraintBottom_toTopOf="@+id/finishTrainingButton"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/listOfExercises"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,33 +26,39 @@
     <Button
         android:id="@+id/finishTrainingButton"
         android:layout_width="190dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginEnd="4dp"
+        android:layout_height="63dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/objectsColor"
+        android:fontFamily="@font/montserrat"
         android:text="@string/finishTrainingButtonText"
-        app:layout_constraintBottom_toTopOf="@+id/cancelTrainingButton"
-        app:layout_constraintEnd_toEndOf="@+id/startExerciseButton"
-        app:layout_constraintStart_toStartOf="@+id/cancelTrainingButton"
-        app:layout_constraintTop_toBottomOf="@+id/startExerciseButton" />
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/cancelTrainingButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cancelTrainingButton" />
 
     <Button
         android:id="@+id/cancelTrainingButton"
-        android:layout_width="177dp"
-        android:layout_height="59dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="190dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/objectsColor"
+        android:fontFamily="@font/montserrat"
         android:text="@string/cancelTrainingButtonText"
-        app:layout_constraintBottom_toTopOf="@+id/listOfExercises"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/finishTrainingButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/finishTrainingButton" />
+        app:layout_constraintTop_toBottomOf="@+id/listOfExercises" />
 
     <ListView
         android:id="@+id/listOfExercises"
-        android:layout_width="0dp"
+        android:layout_width="411dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="11dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cancelTrainingButton" />
+        android:layout_marginBottom="31dp"
+        app:layout_constraintBottom_toTopOf="@+id/cancelTrainingButton"
+        app:layout_constraintEnd_toStartOf="@+id/finishTrainingButton"
+        app:layout_constraintStart_toStartOf="@+id/finishTrainingButton"
+        app:layout_constraintTop_toBottomOf="@+id/startExerciseButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,4 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="backgroundColor">#FFF8E1</color>
+    <color name="objectsColor">#000000</color>
+    <color name="backgroundListColor">#FCE883</color>
 </resources>

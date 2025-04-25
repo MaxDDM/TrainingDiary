@@ -5,63 +5,77 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
     tools:context=".ExerciseActivity">
 
     <Button
         android:id="@+id/finishExerciseButton"
-        android:layout_width="141dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="34dp"
+        android:layout_width="171dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/objectsColor"
+        android:fontFamily="@font/montserrat"
         android:text="@string/finishExerciseButtonText"
-        app:layout_constraintBottom_toTopOf="@+id/cancelExerciseButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/addSetButton"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cancelExerciseButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listOfSets" />
 
     <Button
         android:id="@+id/addSetButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="44dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="14dp"
+        android:backgroundTint="@color/objectsColor"
+        android:fontFamily="@font/montserrat"
         android:text="@string/addSetButtonText"
-        app:layout_constraintEnd_toStartOf="@+id/finishExerciseButton"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/nameEditText"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/cancelExerciseButton"
-        android:layout_width="155dp"
-        android:layout_height="56dp"
-        android:layout_marginBottom="7dp"
+        android:layout_width="171dp"
+        android:layout_height="72dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/objectsColor"
+        android:fontFamily="@font/montserrat"
         android:text="@string/cancelExerciseButtonText"
-        app:layout_constraintBottom_toTopOf="@+id/nameEditText"
-        app:layout_constraintEnd_toEndOf="@+id/addSetButton"
-        app:layout_constraintStart_toStartOf="@+id/addSetButton"
-        app:layout_constraintTop_toBottomOf="@+id/finishExerciseButton" />
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/finishExerciseButton"
+        app:layout_constraintTop_toBottomOf="@+id/listOfSets" />
 
     <EditText
         android:id="@+id/nameEditText"
-        android:layout_width="253dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="20dp"
+        android:layout_width="324dp"
+        android:layout_height="51dp"
         android:autofillHints=""
         android:ems="10"
+        android:fontFamily="@font/montserrat"
         android:hint="@string/nameEditTextHint"
+        android:textSize="18sp"
         android:inputType="text"
         android:text=""
         app:layout_constraintBottom_toTopOf="@+id/listOfSets"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cancelExerciseButton" />
+        app:layout_constraintStart_toStartOf="@+id/listOfSets"
+        app:layout_constraintTop_toBottomOf="@+id/addSetButton" />
 
     <ListView
         android:id="@+id/listOfSets"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/cancelExerciseButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nameEditText" />

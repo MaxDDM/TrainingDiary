@@ -5,27 +5,31 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
     tools:context=".MonthTrainingsActivity">
-
-    <Button
-        android:id="@+id/returnToArchiveButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="33dp"
-        android:text="@string/returnText"
-        app:layout_constraintBottom_toTopOf="@+id/trainingsListView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
         android:id="@+id/trainingsListView"
-        android:layout_width="0dp"
+        android:layout_width="412dp"
         android:layout_height="0dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/returnToArchiveButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/returnToArchiveButton"
+        android:layout_width="244dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/objectsColor"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/returnText"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/returnToArchiveButton" />
+        app:layout_constraintTop_toBottomOf="@+id/trainingsListView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

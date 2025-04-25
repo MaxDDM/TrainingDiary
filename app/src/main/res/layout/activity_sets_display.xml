@@ -5,14 +5,17 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
     tools:context=".SetsDisplayActivity">
 
     <TextView
         android:id="@+id/weightDisplayTextView"
-        android:layout_width="177dp"
-        android:layout_height="0dp"
+        android:layout_width="191dp"
+        android:layout_height="50dp"
         android:layout_marginTop="84dp"
         android:layout_marginBottom="46dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/montserrat"
         app:layout_constraintBottom_toTopOf="@+id/repsDisplayTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,9 +23,11 @@
 
     <TextView
         android:id="@+id/repsDisplayTextView"
-        android:layout_width="163dp"
-        android:layout_height="0dp"
+        android:layout_width="191dp"
+        android:layout_height="50dp"
         android:layout_marginBottom="42dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/montserrat"
         app:layout_constraintBottom_toTopOf="@+id/commentsDisplayTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,8 +36,10 @@
     <TextView
         android:id="@+id/commentsDisplayTextView"
         android:layout_width="191dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="28dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="37dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/montserrat"
         app:layout_constraintBottom_toTopOf="@+id/returnToExerciseButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,10 +47,13 @@
 
     <Button
         android:id="@+id/returnToExerciseButton"
-        android:layout_width="173dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="345dp"
+        android:layout_width="191dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="336dp"
+        android:backgroundTint="@color/objectsColor"
+        android:fontFamily="@font/montserrat"
         android:text="@string/returnText"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
