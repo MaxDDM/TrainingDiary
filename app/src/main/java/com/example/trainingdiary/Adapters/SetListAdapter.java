@@ -28,6 +28,7 @@ public class SetListAdapter extends ArrayAdapter<Set> {
         _sets = sets;
     }
 
+    @SuppressLint("SetTextI18n")
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -38,8 +39,8 @@ public class SetListAdapter extends ArrayAdapter<Set> {
         TextView comments = mainView.findViewById(R.id.commentsTextView);
 
         Set set = _sets.get(position);
-        weight.setText(String.valueOf(set.weight));
-        reps.setText(String.valueOf(set.reps));
+        weight.setText("Вес: " + set.weight);
+        reps.setText("Повторения: " + set.reps);
         comments.setText(set.comments);
 
         return mainView;

@@ -48,7 +48,7 @@ public class MonthTrainingsActivity extends AppCompatActivity {
                 String name = ActiveUserInfo.getDefaults("Name", MonthTrainingsActivity.this);
                 GenericTypeIndicator<ArrayList<Training>> genericTypeIndicator = new GenericTypeIndicator<ArrayList<Training>>() {};
                 ArrayList<Training> trainings = snapshot.child(name).child("trainings").getValue(genericTypeIndicator);
-                ArrayList<String> dates = new ArrayList<>(Arrays.asList(date.split(" ")));
+                ArrayList<String> dates = new ArrayList<>(Arrays.asList(date.split("-")));
                 String month = dates.get(1);
                 String year = dates.get(0);
                 ArrayList<Training> monthTrainings = new ArrayList<>();

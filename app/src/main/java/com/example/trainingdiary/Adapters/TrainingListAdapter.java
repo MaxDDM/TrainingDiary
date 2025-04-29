@@ -1,5 +1,6 @@
 package com.example.trainingdiary.Adapters;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -30,6 +31,7 @@ public class TrainingListAdapter extends ArrayAdapter<Training> {
         _trainings = trainings;
     }
 
+    @SuppressLint("SetTextI18n")
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -38,7 +40,10 @@ public class TrainingListAdapter extends ArrayAdapter<Training> {
         TextView trainingTextView = mainView.findViewById(R.id.trainingTextView);
 
         Training training = _trainings.get(position);
-        trainingTextView.setText(training.date);
+        int ind1 = training.date.indexOf(' ');
+        int ind2 = training.date.lastIndexOf(' ');
+        trainingTextView.setText(training.date.substring(0, ind1) + "-" + training.date.substring(ind1 + 1, ind2)
+                + "-" + training.date.substring(ind2 + 1));
 
         return mainView;
     }
